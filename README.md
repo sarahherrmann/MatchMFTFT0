@@ -1,6 +1,6 @@
 # MatchMFTFT0
 Codes using the matching information of MFT tracks to FT0-C signals.
-These codes need to be added to O2Physics to work.
+These codes need to be added to O2Physics to work, i.e. one needs to add the corresponding codes and to add their name to the CMakeLists.txt files.
 
 Codes for MFT-FT0C matching: available in O2Physics/Common if the PR https://github.com/AliceO2Group/O2Physics/pull/7584 is merged
 The source code: match-mft-ft0.cxx
