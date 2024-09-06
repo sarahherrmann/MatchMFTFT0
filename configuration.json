@@ -1,0 +1,74 @@
+{
+  "internal-dpl-clock": "",
+  "timestamp-task": {
+    "rct-path": "RCT/Info/RunInformation",
+    "orbit-reset-path": "CTP/Calib/OrbitReset",
+    "ccdb-url": "http://alice-ccdb.cern.ch",
+    "verbose": "0",
+    "isRun2MC": "0"
+  },
+  "bc-selection-task": {
+      "triggerBcShift": "999",
+      "processRun2": "false",
+      "processRun3": "true"
+  },
+  "track-propagation": {
+    "lutPath": "GLO/Param/MatLUT",
+    "mVtxPath": "GLO/Calib/MeanVertex",
+    "geoPath": "GLO/Config/GeometryAligned",
+    "grpmagPath": "GLO/Config/GRPMagField",
+    "ccdb-url": "http://alice-ccdb.cern.ch",
+    "minPropagationDistance": "5",
+    "processStandard": "1",
+    "processCovariance": "0"
+  },
+  "event-selection-task": {
+    "syst": "pp",
+    "isMC": "0",
+    "processRun3": "1",
+    "processRun2": "0",
+    "muonSelection": "0",
+    "customDeltaBC": "-1"
+  },
+  "fwd-track-to-collision-association": {
+      "nSigmaForTimeCompat": "4",
+      "timeMargin": "0",
+      "timeShift": "1175",
+      "includeUnassigned": "false",
+      "fillTableOfCollIdsPerTrack": "true",
+      "processFwdAssocWithTime": "true",
+      "processFwdStandardAssoc": "false",
+      "processMFTAssocWithTime": "true",
+      "processMFTStandardAssoc": "false"
+  },
+  "ambiguous-track-propagation": {
+    "ccdb-url": "http:\/\/alice-ccdb.cern.ch",
+    "geoPath": "GLO\/Config\/GeometryAligned",
+    "grpmagPath": "GLO\/Config\/GRPMagField",
+    "mVtxPath": "GLO\/Calib\/MeanVertex",
+    "produceExtra": "false",
+    "produceHistos": "true",
+    "processCentral": "false",
+    "processMFT": "false",
+    "processMFTReassoc": "true"
+  },
+  "matchmftfit": {
+      "verbose": "false",
+      "isMC": "false",
+      "strictBCSel": "true",
+      "shiftBC": "47",
+      "ccdb-url": "http:\/\/alice-ccdb.cern.ch",
+      "geoPath": "GLO\/Config\/GeometryAligned",
+      "grpmagPath": "GLO\/Config\/GRPMagField",
+      "processAmbi": "true"
+  },
+  "nch-mft": {
+      "processMult": "false",
+      "processMultGen": "false",
+      "processMuonsAndMFT": "false",
+      "processMuonsAndMFTFT0": "false",
+      "processMuonsAndMFTReas": "false",
+      "processMFT": "true",
+      "processFwdAmb": "false"
+  }
+}
